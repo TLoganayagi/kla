@@ -2,7 +2,7 @@
 git config --global user.name "Your Name"
 git config --global user.email "your_email@example.com"
 
-2. Start a RepositoryNavigate to your project folder and initialize Git.
+2. Start a Repository Navigate to your project folder and initialize Git.
 Bash
 cd my-project-folder
 git init
@@ -24,12 +24,14 @@ Option A: Standard Git (Requires creating repo on website first)Go to GitHub, cr
 Run this in your terminal:
 git remote add origin https://github.com/YourUsername/RepoName.git
 git branch -M main
+
 Option B: The "No Website" Way (Requires GitHub CLI)If you have gh installed, you can create the remote repo entirely from the terminal:
 gh repo create my-project-name --public --source=. --remote=origin
 
 5. Push and Pull (Syncing)First time pushing:You need to set the "upstream" link so Git remembers where to push.
 git push -u origin main
-After the first time:Upload changes:
+After the first time:
+Upload changes:
 git push
 Download changes (if you edited code on another PC):
 git pull
